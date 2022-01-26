@@ -6,8 +6,11 @@
     <div class="min-vh-100 d-flex justify-content-center align-items-center">
         <form class="mw-100" action="{{ route('signup') }}" method="post" style="width: 400px;">
             @csrf
+            <div class="text-center mb-5">
+                <img src="{{asset('images/logo.png')}}" alt="Login" width="150">
+            </div>
 
-            <h1 class="mb-5 text-secondary text-center">Cadastro</h1>
+            {{-- <h1 class="mb-5 text-secondary text-center">Cadastro</h1> --}}
 
             <div class="mb-3">
                 <input class="form-control" name="name" placeholder="Nome" required>
